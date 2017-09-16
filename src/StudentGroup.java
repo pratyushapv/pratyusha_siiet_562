@@ -149,7 +149,16 @@ public void bubbleSort() {
 }
 @Override
 public Student[] getByBirthDate(Date date) {
-return null;
+int c = 0;
+		for(int i=0;i<students.length;i++)
+			if(students[i].getBirthDate().equals(date))
+				c++;
+		Student temp[] = new Student[c];
+		count = 0;
+		for(int i=0;i<students.length;i++)
+			if(students[i].getBirthDate().equals(date))
+				temp[c++] = students[i];
+		return temp;
 }
 @Override
 public Student[] getBetweenBirthDates(Date firstDate, Date lastDate) {
