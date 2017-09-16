@@ -154,7 +154,7 @@ int c = 0;
 			if(students[i].getBirthDate().equals(date))
 				c++;
 		Student temp[] = new Student[c];
-		count = 0;
+		c = 0;
 		for(int i=0;i<students.length;i++)
 			if(students[i].getBirthDate().equals(date))
 				temp[c++] = students[i];
