@@ -117,7 +117,7 @@ int i=this.students.length;
 		{index=j;
 		break;
                 }
-		//this.students[index]=this.students[i];
+		
 		this.students[index]=null;
 
 	}
